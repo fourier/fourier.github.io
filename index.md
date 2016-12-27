@@ -29,3 +29,10 @@ Using git 2.11.0
   ```
   NO_NSEC=1 NO_CURL=1 NO_PERL_MAKEMAKER=1 NO_PERL=1 NO_TCLTK=1 NO_GETTEXT=1 install
   ```
+
+
+### GNU APL
+Taken the latest from SVN, revision 834. Configure:
+```
+./configure MAKE_J=1 --without-sqlite3 --without-postrgesql
+```
