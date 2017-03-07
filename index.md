@@ -9,6 +9,7 @@
   1. initrd.bin
   1. updater-tools.bin
   1. updater.sh
+  
   to the root directory of the SD/CF card (formatted to FAT32)
 - Unplug Zaurus from the power outlet, check what it is not charging
 - Take away the battery for 5 seconds
@@ -17,9 +18,7 @@
 - You will see the Japaneese menu
 - Plug zaurus to the power outlet.
 - Select the 4th item, and there select eithe CF or SD(depending on there do you have your files)
-- Select "3 NAND Flash Utils".
-- Select "Resize root partition"
-- Install a new kernel
+- Don't forget to *not to use* entire disk, but default drives layout, otherwise there will be no swap, and the gcc will not be able co compile larger projects (like GNU APL)
 - Install the softare
 - Reboot
 
@@ -27,9 +26,30 @@
 
 Given: Zaurus C3000 with installed [pdaXii3](http://www.users.on.net/~hluc/myZaurus/pdaxii13.html)
 
-- Don't forget to not to use entire disk, but default drives layout, otherwise there will be no swap.
 
 ## Software
+### Feeds
+
+Edit the /etc/ipkg.conf and add there paths to feeds on SD/CF card.
+Warning: install from the feed using commands like
+```
+ipkg install gcc
+```
+is a preferred way over ```ipkg install /mnt/card/something.ipk``` since it will pick up dependencies automatically!
+
+Install from the feed:
+- gcc (it will install binutils as a dependency)
+- gcc-headers
+- libgcc
+
+Install from capnfish-feed:
+- mrxvt
+
+### Fonts
+- Copy fonts (ttf files) to ```/usr/X11R6/lib/X11/fonts/TTF/```
+- Run ```fc-cache```
+
+## Compiling software
 
 ### Git
 
