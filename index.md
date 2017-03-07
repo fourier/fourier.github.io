@@ -2,7 +2,32 @@
 
 ## Introduction
 
+### How to install ROM
+- Place files:
+  1. zImage-2.4.20.bin
+  1. hdimage-base.tgz
+  1. initrd.bin
+  1. updater-tools.bin
+  1. updater.sh
+  to the root directory of the SD/CF card (formatted to FAT32)
+- Unplug Zaurus from the power outlet, check what it is not charging
+- Take away the battery for 5 seconds
+- Insert a battery, close the cover (move the slider towards the battery)
+- Press OK on a keyboard and holding it press the power on key. Keep OK pressed until the Zaurus is running.
+- You will see the Japaneese menu
+- Plug zaurus to the power outlet.
+- Select the 4th item, and there select eithe CF or SD(depending on there do you have your files)
+- Select "3 NAND Flash Utils".
+- Select "Resize root partition"
+- Install a new kernel
+- Install the softare
+- Reboot
+
+### Notes
+
 Given: Zaurus C3000 with installed [pdaXii3](http://www.users.on.net/~hluc/myZaurus/pdaxii13.html)
+
+- Don't forget to not to use entire disk, but default drives layout, otherwise there will be no swap.
 
 ## Software
 
@@ -32,7 +57,14 @@ Using git 2.11.0
 
 
 ### GNU APL
-Taken the latest from SVN, revision 834. Configure:
+Taken the latest from SVN.
+- Install gcc from feed
+- Install g++ from feed
+- Install awk from feed
+- Install sed from feed
+- Install make from feed
+
+Configure:
 
 ```
 ./configure MAKE_J=1 --without-sqlite3 --without-postrgesql
