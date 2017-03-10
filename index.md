@@ -49,6 +49,9 @@ Install from capnfish-feed:
 - Copy fonts (ttf files) to ```/usr/X11R6/lib/X11/fonts/TTF/```
 - Run ```fc-cache```
 
+### Matchbox configuration
+- All applets on a lower panel are configurable via **~/.matchbox/mbdock.session** file.
+
 ## Compiling software
 
 ### Git
@@ -66,26 +69,26 @@ Using git 2.11.0
 2. Compiling with the following command line
 
   ```
-  NO_NSEC=1 NO_CURL=1 NO_PERL_MAKEMAKER=1 NO_PERL=1 NO_TCLTK=1 NO_GETTEXT=1 make
+  NO_NSEC=1 NO_CURL=1 NO_PERL_MAKEMAKER=1 NO_PERL=1 NO_TCLTK=1 NO_GETTEXT=1 NO_REGEX=1 make prefix=/usr/local
   ```
 
 3. Install using 
 
   ```
-  NO_NSEC=1 NO_CURL=1 NO_PERL_MAKEMAKER=1 NO_PERL=1 NO_TCLTK=1 NO_GETTEXT=1 install
+  NO_NSEC=1 NO_CURL=1 NO_PERL_MAKEMAKER=1 NO_PERL=1 NO_TCLTK=1 NO_GETTEXT=1 NO_REGEX=1 make prefix=/usr/local install
   ```
 
 
 ### GNU APL
 Taken the latest from SVN.
-- Install gcc from feed
-- Install g++ from feed
-- Install awk from feed
-- Install sed from feed
-- Install make from feed
+- Install gcc from the feed
+- Install g++ from the feed
+- Install awk from the feed
+- Install sed from the feed
+- Install make from the feed
 
 Configure:
 
 ```
-./configure MAKE_J=1 --without-sqlite3 --without-postrgesql
+./configure MAKE_J=1 CXX_WERROR=no --without-sqlite3 --without-postrgesql 
 ```
