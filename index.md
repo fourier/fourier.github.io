@@ -53,6 +53,10 @@ Install from capnfish-feed:
 - All applets on a lower panel are configurable via **~/.matchbox/mbdock.session** file.
 
 ## Compiling software
+- Install gcc from the feed
+- Install awk from the feed
+- Install sed from the feed
+- Install make from the feed
 
 ### Git
 
@@ -81,11 +85,6 @@ Using git 2.11.0
 
 ### GNU APL
 Taken the latest from SVN.
-- Install gcc from the feed
-- Install g++ from the feed
-- Install awk from the feed
-- Install sed from the feed
-- Install make from the feed
 
 Configure:
 
