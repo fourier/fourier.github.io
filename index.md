@@ -52,6 +52,9 @@ Install from capnfish-feed:
 ### Matchbox configuration
 - All applets on a lower panel are configurable via **~/.matchbox/mbdock.session** file.
 
+### Openbox configuration
+Edit the ```~/.config/openbox/rc.xml``` file and comment all keybidings for Alt-1..10. since these hotkeys are used with akt for entering APL-characters.
+
 ## Compiling software
 - Install gcc from the feed
 - Install awk from the feed
@@ -91,3 +94,4 @@ Configure:
 ```
 ./configure MAKE_J=1 CXX_WERROR=no --without-sqlite3 --without-postrgesql 
 ```
+
