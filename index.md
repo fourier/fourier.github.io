@@ -95,3 +95,19 @@ Configure:
 ./configure MAKE_J=1 CXX_WERROR=no --without-sqlite3 --without-postrgesql 
 ```
 
+### pinfo
+PInfo is a ncurses-based reader of GNU Texinfo files. It is useful when Emacs is not installed.
+1. On a host machine run ./autogen.sh
+2. Copy sources with generated **configure** script to Zaurus
+3. Install ncurses from the feed
+4. By some reason **configure** can't find location of the ncurses.h file. Configure with the following command-line option:
+```
+./configure --with-curses=/opt/native/arm/3.4.6-xscale-softvfp/armv5tel-cacko-linux/
+```
+5. Make will look for texinfo installation to generate info documentation on pinfo. We don't need it, we just want to build the binary:
+```
+cd src/
+make
+cp pinfo /usr/local/bin
+```
+
