@@ -111,3 +111,18 @@ make
 cp pinfo /usr/local/bin
 ```
 
+### Ratpoinson
+Using ratpaison version 1.4.8
+Nothing spectial needed: just
+```
+configure
+make
+make install
+```
+
+## Configuring keyboard layout
+Install xkb from the feed:
+```
+ipkg install xfree-xkb-utils
+```
+
