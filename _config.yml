@@ -13,12 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: fourier's adventures in software development
+title: fourier's adventures in code
 email: alexey.veretennikov@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, my name is Alexey Veretennikov and this is my blog about
-  software development. I'm writing about things I generally find
-  interesting or surprising for me in programming or related fields.
+  programming.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: txm_fourier
