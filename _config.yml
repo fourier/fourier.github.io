@@ -24,7 +24,10 @@ twitter_username: txm_fourier
 github_username:  fourier
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 #theme: jekyll-theme-hacker
 theme: minima
 plugins:
