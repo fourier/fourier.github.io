@@ -46,3 +46,6 @@ plugins:
 #   - vendor/ruby/
 
 google_analytics: UA-111505862-1
+
+disqus:
+  shortname: fourier-github-io
