@@ -14,13 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: fourier's adventures in code
-email: alexey.veretennikov@gmail.com
+email: fourier@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, my name is Alexey Veretennikov and this is my blog about
   programming.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fourier.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: txm_fourier
 github_username:  fourier
 
 # Build settings
