@@ -10,11 +10,11 @@ Implemented a [converter](https://github.com/fourier/reflex-map/) of the maps fr
 
 The releases (for Windows) could be found [here](https://github.com/fourier/reflex-map/releases)
 
-The idea was to port the most popular map [The Catalyst](http://thc333.com/reflex/#tenth) by tehace to QuakeWorld for duel style of the gameplay. I've got an "ok" from the original author of the The Catalyst map (tehace) on this work.
+The idea was to port the most popular map [The Catalyst](http://thc333.com/reflex/#tenth) by **tehace** to **QuakeWorld** for duel style of the gameplay. I've got an "ok" from the original author of the The Catalyst map (**tehace**) on this work.
 
 The complication was to convert the scale along with the geometry, particularly vertical scale should be reduced.
 
-The work was done mainly in Linux/SBCL during evenings while "pretending" to sleep while my wife was trying to get our 3yo daughter to sleep(which is extremely hard at this age!). The Windows releases with GUI were made in LispWorks 7.0 HobbyistDV for Win32. 
+The work was done mainly in Linux/SBCL during evenings, "pretending" to sleep while my wife was trying to get our 3yo daughter to sleep(which is extremely hard at this age!). The Windows releases with GUI were made in LispWorks 7.0 HobbyistDV for Win32. 
 
 
 2 specific libraries helped me with this work: [3d-matrices](https://github.com/Shinmera/3d-matrices) by Shinmera and [cl-yacc](https://www.irif.fr/~jch/software/cl-yacc/) by Juliusz Chroboczek.
